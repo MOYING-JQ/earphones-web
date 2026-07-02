@@ -134,7 +134,7 @@ function setupLights() {
  */
 function loadModel() {
     const loader = new THREE.GLTFLoader();
-    const modelUrl = 'models/蓝牙耳机3_爱给网_aigei_com/scene.gltf';
+    const modelUrl = 'models/earphone_model/scene.gltf';
 
     loader.load(
         modelUrl,

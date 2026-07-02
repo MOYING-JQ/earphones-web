@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundMax Pro - 有线耳机新品发布会</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="heroCanvas"></canvas>
+    <p class="hint-text">🖱️ 移动鼠标旋转耳机模型 &nbsp;|&nbsp; 滚动探索更多</p>
+
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">SoundMax</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero">首页</a></li>
+                <li><a href="#pain-points">市场痛点</a></li>
+                <li><a href="#design">外观设计</a></li>
+                <li><a href="#technology">核心技术</a></li>
+                <li><a href="#accessories">配件售后</a></li>
+                <li><a href="#swot">SWOT分析</a></li>
+                <li><a href="#pricing">分层定价</a></li>
+                <li><a href="#purchase">购买渠道</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero 首页：模型为主体 -->
+    <section id="hero" class="hero-section" data-section="hero">
+        <div class="hero-model-space"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">NEW RELEASE</span>
+                <h1 class="hero-title">SoundMax <span class="hero-title-gradient">Pro</span></h1>
+                <p class="hero-desc">还原原声，臻享卓越</p>
+                <div class="color-selector">
+                    <span class="color-label">选择配色</span>
+                    <div class="color-options">
+                        <button class="color-btn active" data-color="#1a1a1a" style="background: #1a1a1a;" title="深空黑"></button>
+                        <button class="color-btn" data-color="#4a4a5a" style="background: #4a4a5a;" title="石墨灰"></button>
+                        <button class="color-btn" data-color="#87CEEB" style="background: #87CEEB;" title="天空蓝"></button>
+                        <button class="color-btn" data-color="#FFD700" style="background: #FFD700;" title="香槟金"></button>
+                        <button class="color-btn" data-color="#c0c0c0" style="background: #c0c0c0;" title="星光银"></button>
+                    </div>
+                </div>
+                <button class="hero-btn" onclick="openPurchaseModal()">立即预约</button>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>向下滚动探索</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- 市场痛点 -->
+    <section id="pain-points" class="section pain-section" data-section="pain-points">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">PROBLEM & VISION</span>
+                <h2 class="section-title">市场痛点与品牌愿景</h2>
+                <p class="section-subtitle">我们发现用户在音频体验中面临的三大核心问题</p>
+            </div>
+            <div class="pain-points-grid">
+                <div class="pain-card pain-card-1" data-scroll>
+                    <span class="pain-num">01</span>
+                    <div class="pain-icon-wrap">
+                        <div class="pain-icon">🎧</div>
+                    </div>
+                    <h3>线材缠绕困扰</h3>
+                    <p>传统有线耳机线材易缠绕，使用不便，严重影响用户体验与出行效率</p>
+                </div>
+                <div class="pain-card pain-card-2" data-scroll>
+                    <span class="pain-num">02</span>
+                    <div class="pain-icon-wrap">
+                        <div class="pain-icon">✈️</div>
+                    </div>
+                    <h3>特殊场景需求</h3>
+                    <p>飞机等禁止蓝牙设备的环境下，高品质有线耳机成为不可替代的刚需</p>
+                </div>
+                <div class="pain-card pain-card-3" data-scroll>
+                    <span class="pain-num">03</span>
+                    <div class="pain-icon-wrap">
+                        <div class="pain-icon">🎵</div>
+                    </div>
+                    <h3>音质追求</h3>
+                    <p>专业用户与音乐爱好者对音质有极高要求，普通耳机难以满足期待</p>
+                </div>
+            </div>
+            <div class="vision-box" data-scroll>
+                <div class="vision-glow"></div>
+                <div class="vision-content">
+                    <span class="vision-badge">品牌愿景</span>
+                    <h3>还原原声，臻享卓越</h3>
+                    <p>SoundMax 致力于解决线材缠绕痛点，同时提供专业级音质体验，让每一位用户都能享受纯净的音乐之旅。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 外观设计 -->
+    <section id="design" class="section design-section" data-section="design">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">DESIGN</span>
+                <h2 class="section-title">外观设计</h2>
+                <p class="section-subtitle">自然美学与精湛工艺的完美融合</p>
+            </div>
+            <div class="design-content">
+                <div class="design-model-area">
+                    <div class="design-frame-top"></div>
+                    <div class="design-frame-bottom"></div>
+                    <div class="design-frame-left"></div>
+                    <div class="design-frame-right"></div>
+                </div>
+                <div class="design-features">
+                    <div class="feature-item feature-1" data-scroll>
+                        <span class="feature-num">01</span>
+                        <div class="feature-icon-wrap">
+                            <span class="feature-icon">💧</span>
+                        </div>
+                        <div class="feature-text">
+                            <h4>自然流动美学</h4>
+                            <p>设计灵感源自自然流动美学，线条柔和流畅，每一处弧线都经过精心打磨</p>
+                        </div>
+                    </div>
+                    <div class="feature-item feature-2" data-scroll>
+                        <span class="feature-num">02</span>
+                        <div class="feature-icon-wrap">
+                            <span class="feature-icon">🛡️</span>
+                        </div>
+                        <div class="feature-text">
+                            <h4>高品质材质</h4>
+                            <p>TPU数据线、哑光耐磨充电仓，精选材质经久耐用，触感温润细腻</p>
+                        </div>
+                    </div>
+                    <div class="feature-item feature-3" data-scroll>
+                        <span class="feature-num">03</span>
+                        <div class="feature-icon-wrap">
+                            <span class="feature-icon">🪶</span>
+                        </div>
+                        <div class="feature-text">
+                            <h4>极致轻量化</h4>
+                            <p>单只耳机仅10.3g，人体工学设计，长时间佩戴舒适无负担</p>
+                        </div>
+                    </div>
+                    <div class="feature-item feature-4" data-scroll>
+                        <span class="feature-num">04</span>
+                        <div class="feature-icon-wrap">
+                            <span class="feature-icon">🎨</span>
+                        </div>
+                        <div class="feature-text">
+                            <h4>四款配色</h4>
+                            <div class="color-palette">
+                                <span class="color-dot" style="background: #1a1a1a;" title="深空黑"></span>
+                                <span class="color-dot" style="background: #4a4a5a;" title="石墨灰"></span>
+                                <span class="color-dot" style="background: #87CEEB;" title="天空蓝"></span>
+                                <span class="color-dot" style="background: #FFD700;" title="香槟金"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心技术 -->
+    <section id="technology" class="section tech-section" data-section="technology">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">TECHNOLOGY</span>
+                <h2 class="section-title">核心技术</h2>
+                <p class="section-subtitle">六大创新科技，重新定义有线耳机体验</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card tech-1" data-scroll>
+                    <span class="tech-num">01</span>
+                    <div class="tech-icon-wrap">
+                        <span class="tech-icon">🎛️</span>
+                    </div>
+                    <h3>10mm石墨烯振膜</h3>
+                    <p>采用10mm石墨烯振膜单元，还原录音室级音质，低频澎湃有力</p>
+                </div>
+                <div class="tech-card tech-2" data-scroll>
+                    <span class="tech-num">02</span>
+                    <div class="tech-icon-wrap">
+                        <span class="tech-icon">🔊</span>
+                    </div>
+                    <h3>LDAC高清解码</h3>
+                    <p>支持LDAC高清解码技术，减少失真，音质更纯净，传输更稳定</p>
+                </div>
+                <div class="tech-card tech-3" data-scroll>
+                    <span class="tech-num">03</span>
+                    <div class="tech-icon-wrap">
+                        <span class="tech-icon">💎</span>
+                    </div>
+                    <h3>SoundAI S1芯片</h3>
+                    <p>自研SoundAI S1音频芯片，专业级音频处理，智能降噪算法</p>
+                </div>
+                <div class="tech-card tech-4" data-scroll>
+                    <span class="tech-num">04</span>
+                    <div class="tech-icon-wrap">
+                        <span class="tech-icon">🔄</span>
+                    </div>
+                    <h3>弧形收纳槽</h3>
+                    <p>弧形收纳槽设计，配合齿轮卡扣，一键松线，收纳整洁有序</p>
+                </div>
+                <div class="tech-card tech-5" data-scroll>
+                    <span class="tech-num">05</span>
+                    <div class="tech-icon-wrap">
+                        <span class="tech-icon">🔒</span>
+                    </div>
+                    <h3>精密齿轮卡扣</h3>
+                    <p>精密齿轮卡扣系统，减少线材拉扯损伤，延长使用寿命</p>
+                </div>
+                <div class="tech-card tech-6" data-scroll>
+                    <span class="tech-num">06</span>
+                    <div class="tech-icon-wrap">
+                        <span class="tech-icon">✨</span>
+                    </div>
+                    <h3>一键松线</h3>
+                    <p>创新一键松线设计，使用便捷，保护线材，出行更从容</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 配件售后 -->
+    <section id="accessories" class="section accessories-section" data-section="accessories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">ACCESSORIES & SERVICE</span>
+                <h2 class="section-title">配件与售后</h2>
+                <p class="section-subtitle">完整配件套装，贴心售后保障</p>
+            </div>
+            <div class="accessories-content">
+                <div class="accessories-list glass-card" data-scroll>
+                    <div class="acc-icon-wrap">
+                        <span class="acc-icon">📦</span>
+                    </div>
+                    <h3>套装配件</h3>
+                    <ul>
+                        <li>
+                            <span class="acc-item-icon">🎧</span>
+                            <span class="acc-item-text">SoundMax Pro 耳机 <em>x1</em></span>
+                        </li>
+                        <li>
+                            <span class="acc-item-icon">📦</span>
+                            <span class="acc-item-text">哑光收纳充电仓 <em>x1</em></span>
+                        </li>
+                        <li>
+                            <span class="acc-item-icon">🎯</span>
+                            <span class="acc-item-text">三副尺寸耳塞 <em>S/M/L</em></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="service-list glass-card" data-scroll>
+                    <div class="acc-icon-wrap">
+                        <span class="acc-icon">🛡️</span>
+                    </div>
+                    <h3>售后服务</h3>
+                    <ul>
+                        <li>
+                            <span class="acc-item-icon">🔧</span>
+                            <span class="acc-item-text">整机退换维修服务</span>
+                        </li>
+                        <li>
+                            <span class="acc-item-icon">🕐</span>
+                            <span class="acc-item-text">24小时在线客服支持</span>
+                        </li>
+                        <li>
+                            <span class="acc-item-icon">📞</span>
+                            <span class="acc-item-text">专业技术支持团队</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SWOT分析 -->
+    <section id="swot" class="section swot-section" data-section="swot">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">SWOT ANALYSIS</span>
+                <h2 class="section-title">SWOT 分析</h2>
+                <p class="section-subtitle">优势与挑战并存，机遇与发展共进</p>
+            </div>
+            <div class="swot-grid">
+                <div class="swot-card swot-strength glass-card" data-scroll>
+                    <div class="swot-card-header">
+                        <span class="swot-icon">💪</span>
+                        <h3>优势<span class="swot-label">Strengths</span></h3>
+                    </div>
+                    <ul>
+                        <li>声学技术先进，音质远超同价位竞品</li>
+                        <li>佩戴舒适，人体工学设计</li>
+                        <li>收纳设计创新，出行便携</li>
+                    </ul>
+                </div>
+                <div class="swot-card swot-weakness glass-card" data-scroll>
+                    <div class="swot-card-header">
+                        <span class="swot-icon">⚡</span>
+                        <h3>劣势<span class="swot-label">Weaknesses</span></h3>
+                    </div>
+                    <ul>
+                        <li>售价偏高，价格敏感用户流失</li>
+                        <li>受众细分，市场覆盖面有限</li>
+                    </ul>
+                </div>
+                <div class="swot-card swot-opportunity glass-card" data-scroll>
+                    <div class="swot-card-header">
+                        <span class="swot-icon">🚀</span>
+                        <h3>机遇<span class="swot-label">Opportunities</span></h3>
+                    </div>
+                    <ul>
+                        <li>有线耳机市场需求持续增长</li>
+                        <li>特殊场景（游戏/直播）刚需</li>
+                        <li>专业用户群体不断扩大</li>
+                    </ul>
+                </div>
+                <div class="swot-card swot-threat glass-card" data-scroll>
+                    <div class="swot-card-header">
+                        <span class="swot-icon">⚠️</span>
+                        <h3>威胁<span class="swot-label">Threats</span></h3>
+                    </div>
+                    <ul>
+                        <li>行业竞争激烈，新品牌不断涌现</li>
+                        <li>技术迭代快，产品生命周期缩短</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swot-strategy glass-card" data-scroll>
+                <div class="strategy-icon">🎯</div>
+                <h3>发展策略</h3>
+                <p>扬长避短，把握市场机会。聚焦音质优势，拓展专业用户市场，打造差异化竞争优势。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分层定价 -->
+    <section id="pricing" class="section pricing-section" data-section="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">PRICING</span>
+                <h2 class="section-title">分层定价</h2>
+                <p class="section-subtitle">三档配置，满足不同用户需求</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card glass-card" data-scroll>
+                    <div class="pricing-tier">标准版</div>
+                    <div class="price">¥119</div>
+                    <p class="price-sub">入门之选</p>
+                    <ul>
+                        <li><span class="check">✓</span> 10mm动圈单元</li>
+                        <li><span class="check">✓</span> 基础音质调校</li>
+                        <li><span class="check">✓</span> TPU线材</li>
+                        <li><span class="check">✓</span> 标准收纳盒</li>
+                    </ul>
+                    <button class="buy-btn" onclick="openPurchaseModal('标准版')">立即购买</button>
+                </div>
+                <div class="pricing-card pricing-card-featured glass-card" data-scroll>
+                    <span class="pricing-badge">🔥 热门推荐</span>
+                    <div class="pricing-tier">鎏金版</div>
+                    <div class="price">¥199</div>
+                    <p class="price-sub">最佳性价比</p>
+                    <ul>
+                        <li><span class="check">✓</span> 10mm石墨烯振膜</li>
+                        <li><span class="check">✓</span> LDAC高清解码</li>
+                        <li><span class="check">✓</span> 哑光收纳充电仓</li>
+                        <li><span class="check">✓</span> 三副尺寸耳塞</li>
+                    </ul>
+                    <button class="buy-btn" onclick="openPurchaseModal('鎏金版')">立即购买</button>
+                </div>
+                <div class="pricing-card glass-card" data-scroll>
+                    <div class="pricing-tier">专业版</div>
+                    <div class="price">¥1299</div>
+                    <p class="price-sub">旗舰体验</p>
+                    <ul>
+                        <li><span class="check">✓</span> SoundAI S1芯片</li>
+                        <li><span class="check">✓</span> 录音室级音质</li>
+                        <li><span class="check">✓</span> 齿轮卡扣收纳</li>
+                        <li><span class="check">✓</span> 专业配件套装</li>
+                    </ul>
+                    <button class="buy-btn" onclick="openPurchaseModal('专业版')">立即购买</button>
+                </div>
+            </div>
+            <p class="payment-info">支持多种付款方式，降低购买门槛</p>
+        </div>
+    </section>
+
+    <!-- 购买渠道 -->
+    <section id="purchase" class="section purchase-section" data-section="purchase">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">PURCHASE</span>
+                <h2 class="section-title">购买渠道与福利</h2>
+                <p class="section-subtitle">多渠道选购，多重福利等你来享</p>
+            </div>
+            <div class="channels-grid">
+                <div class="channel-card glass-card" data-scroll>
+                    <div class="channel-icon-wrap">
+                        <span class="channel-icon">🌐</span>
+                    </div>
+                    <h3>官网购买</h3>
+                    <p>官方网站直购，正品保障</p>
+                </div>
+                <div class="channel-card glass-card" data-scroll>
+                    <div class="channel-icon-wrap">
+                        <span class="channel-icon">🛒</span>
+                    </div>
+                    <h3>京东旗舰店</h3>
+                    <p>京东自营，极速配送</p>
+                </div>
+                <div class="channel-card glass-card" data-scroll>
+                    <div class="channel-icon-wrap">
+                        <span class="channel-icon">🐱</span>
+                    </div>
+                    <h3>天猫旗舰店</h3>
+                    <p>官方授权，品质保证</p>
+                </div>
+                <div class="channel-card glass-card" data-scroll>
+                    <div class="channel-icon-wrap">
+                        <span class="channel-icon">🏪</span>
+                    </div>
+                    <h3>线下体验店</h3>
+                    <p>亲临体验，专业导购</p>
+                </div>
+            </div>
+            <div class="promotion-box glass-card" data-scroll>
+                <div class="promo-icon">🎁</div>
+                <h3>限时福利</h3>
+                <div class="promotion-list">
+                    <span class="promo-tag">限时折扣</span>
+                    <span class="promo-tag">精美赠品</span>
+                    <span class="promo-tag">全国包邮</span>
+                    <span class="promo-tag">7天无理由退换</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2>SoundMax，还原原声，臻享卓越</h2>
+                <p>© 2024 SoundMax. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 购买弹窗 -->
+    <div class="modal" id="purchaseModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closePurchaseModal()">&times;</span>
+            <h3>购买提示</h3>
+            <p id="modalText">感谢您对SoundMax的关注！</p>
+            <p>我们将在24小时内与您联系确认订单详情。</p>
+            <button class="modal-btn" onclick="closePurchaseModal()">确定</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="threejs-script.js"></script>
+</body>
+</html>
